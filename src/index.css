@@ -1,0 +1,71 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap'); */
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/path/to/LibreBaskerville-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+.font-libre-baskerville {
+  font-family: "Libre Baskerville", serif;
+}
+
+/* @font-face {
+  font-family: 'Libre-Baskerville' ;
+  src: url();
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: white !important;
+}
+
+:root {
+  font-family: "Libre Baskerville", serif;
+  font-size: 14px;
+  color: #f8f2e6;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 2px 20px transparent;
+  }
+  50% {
+    box-shadow: 0 2px 20px rgba(226, 197, 116, 0.5);
+  }
+  to {
+    box-shadow: 0 2px 20px transparent;
+  }
+}
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
